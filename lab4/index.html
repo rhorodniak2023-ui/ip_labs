@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student card FORM</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- Секція 1: Особиста інформація -->
+            <section>
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Provide your details</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password" required>
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="16" max="100">
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+
+                    <p>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label><br>
+
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </p>
+
+                    <p>
+                        <label>Languages Known:</label><br>
+                        <input type="checkbox" id="english" name="languages" value="English">
+                        <label for="english">English</label><br>
+
+                        <input type="checkbox" id="spanish" name="languages" value="Spanish">
+                        <label for="spanish">Spanish</label><br>
+
+                        <input type="checkbox" id="french" name="languages" value="French">
+                        <label for="french">French</label>
+                    </p>
+
+                    <p>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Poland">Poland</option>
+                        </select>
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <!-- Секція 2: Предмети коледжу -->
+            <section>
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Select your subjects</legend>
+
+                    <p>
+                        <label for="subjects">Choose subjects:</label><br>
+                        <select id="subjects" name="subjects" multiple size="5">
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="English">English</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="interest">Rate your interest in Computer Science:</label><br>
+                        <input type="range" id="interest" name="interest" min="0" max="100">
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <!-- Секція 3: Оцінка навичок -->
+            <section>
+                <h2>Skills Assessment</h2>
+                <fieldset>
+                    <legend>Assess your skills</legend>
+
+                    <p>
+                        <label for="skills">Describe your skills:</label><br>
+                        <textarea id="skills" name="skills" rows="5" cols="50" placeholder="List your skills here..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="resume">Upload your resume:</label>
+                        <input type="file" id="resume" name="resume">
+                    </p>
+
+                    <p>
+                        <label for="color">Pick your favorite color:</label>
+                        <input type="color" id="color" name="color" value="#000000">
+                    </p>
+
+                    <p>
+                        <label for="study_time">Preferred study time:</label>
+                        <input type="time" id="study_time" name="study_time">
+                    </p>
+
+                </fieldset>
+            </section>
+
+            <br>
+            <input type="submit" value="Submit Survey">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Student card by Городняк Руслан. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
